@@ -1,0 +1,33 @@
+<div class="mt-6 w-full h-full pb-5">
+    <!-- Story Section--> 
+    <div class="w-full h-50 flex items-center justify-center space-x-2 overflow-hidden cursor-pointer">
+      <div class="w-28 h-48 relative rounded-xl shadow " style="background-image: url('https://picsum.photos/400')">
+        <div
+          class="w-full absolute flex justify-center"
+          style=" bottom: 13%">
+          <button class="focus:outline-none z-40 w-10 h-10 bg-blue-500 rounded-full border-4 border-white">
+            <i class="text-white fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="bg-white z-30 absolute text-center bottom-0 p-2 pt-4 w-full h-auto rounded-b-lg ">
+          <p class="text-gray-500 text-sm font-semibold">Create Story</p>
+        </div>
+      </div>
+      <app-story></app-story>
+      <app-story></app-story>
+      <app-story></app-story>
+      <app-story></app-story>
+      <!--
+      <Story />
+      <Story />
+      <Story />
+      <Story />
+       -->
+    </div>
+    <!-- Create Post-->
+    <app-create-post-box></app-create-post-box>
+    <!--<CreatePostBox /> -->
+    <!--All posts--> 
+    <!--<PostContainer />-->
+    <app-post-container></app-post-container>
+  </div>
