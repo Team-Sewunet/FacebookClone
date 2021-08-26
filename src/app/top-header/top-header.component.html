@@ -13,56 +13,78 @@
       </div>
     </div>
     <div class='col-span-3 flex items-center justify-center space-x-2'>
+      <a routerLink="/">
         <div class='w-24 h-12 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'>
           <div class='w-14 h-auto relative flex items-center justify-center'>
-            <div>
-              <i class='text-2xl fas fa-home'></i>
+            <div [ngClass]="{'text-blue-500': currentRoute === '/' }" class="text-gray-400">
+              
+                <i class='text-2xl fas fa-home'></i>
+              
             </div>
           </div>
         </div>
+      </a>
+      <a routerLink="/watch">
         <div class='w-24 h-12 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'>
           <div class='w-14 h-auto relative flex items-center justify-center'>
             <div class='absolute bg-red-500 text-white text-xs font-bold px-1 rounded-lg top-0 right-0'>
               9+
             </div>
-            <div>
+            <div [ngClass]="{'text-blue-500': currentRoute === '/watch' }" class="text-gray-400">
+              
               <i class='text-2xl fas fa-tv'></i>
+            
             </div>
           </div>
         </div>
+      </a>
+    
+    <a routerLink="/marketplace">
         <div class='w-24 h-12 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'>
           <div class='w-14 h-auto relative flex items-center justify-center'>
             <div class='hidden absolute bg-red-500 text-white text-xs font-bold px-1 rounded-lg top-0 right-0'>
               9+
             </div>
-            <div>
+            <div [ngClass]="{'text-blue-500': currentRoute === '/marketplace' }" class="text-gray-400">
               <i class='text-2xl fas fa-store'></i>
+              
             </div>
           </div>
         </div>
+      </a>
+      <a routerLink="/groups">
         <div class='w-24 h-12 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'>
           <div class='w-14 h-auto relative flex items-center justify-center'>
             <div class='absolute bg-red-500 text-white text-xs font-bold px-1 rounded-lg top-0 right-0'>
               2
             </div>
-            <div>
+            <div [ngClass]="{'text-blue-500': currentRoute === '/groups' }" class="text-gray-400">
+              
               <i class='text-2xl fas fa-users'></i>
+              
             </div>
           </div>
         </div>
+      </a>
+      <a routerLink="/gaming">
         <div class='w-24 h-12 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'>
           <div class='w-14 h-auto relative flex items-center justify-center'>
             <div class='absolute bg-red-500 text-white text-xs font-bold px-1 rounded-lg top-0 right-0'>
               9+
             </div>
-            <div>
+            <div [ngClass]="{'text-blue-500': currentRoute === '/gaming' }" class="text-gray-400">
+             
               <i class='text-2xl fas fa-gamepad'></i>
+            
             </div>
           </div>
         </div>
+        </a>
     </div>
+  
     <div class='col-span-2 flex items-center justify-end'>
       <div class='h-10 w-auto flex items-center space-x-2 pr-2'>
+        <a routerLink="/profile">
           <button class='h-10 px-2 flex space-x-1 items-center justify-center focus:outline-none hover:bg-gray-300 rounded-full'>
             <div class='h-8'>
               <img
@@ -75,6 +97,7 @@
               <p class='font-semibold text-sm'>Saiful</p>
             </div>
           </button>
+        </a>
         <button class='w-10 h-10 bg-gray-200 focus:outline-none hover:bg-gray-300 rounded-full'>
           <i class='fas fa-plus'></i>
         </button>
